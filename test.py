@@ -22,6 +22,11 @@ while(1):
     if area in naverWeather.map_cityNum:
       print(naverWeather(area).getWeather())
       erumyFortune.Fortune_1()
+    elif area =='': # 공백 입력 시
+      print(naverWeather("서울").getWeather())
+      erumyFortune.Fortune_1()
+      break
+
  elif control == '2': # 2번 입력 시
   while(1):
       print("-------------------------------------------------")

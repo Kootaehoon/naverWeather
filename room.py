@@ -79,225 +79,285 @@ class room():
          if('26.0' < a[13]):
              cody1 = list(set([s for s in L1 if "나시티" in s] + [s for s in L1 if "민소매" in s] + [s for s in L1 if "반" in s])) #상의 조건결과
              cody2 = list(set([s for s in L2 if "반" in s])) #하의 조건결과
-             if(s for s in cody2 if "청" in s): # 하의에 "청"이 있으면
-                 cody3 = list(set([s for s in cody2 if "청" in s])) # "청"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "흰" in s): # 상의에 "흰"이 있으면
-                     cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
-             if(s for s in cody2 if "검" in s): # 하의에 "검"이 있으면
-                 cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "회" in s): # 상의에 "회"이 있으면
-                     cody4 = list(set([s for s in cody1 if "회" in s])) # "회"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
-             if(s for s in cody2 if "검" in s): # 하의에 "검"이 있으면
-                 cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "흰" in s): # 상의에 "흰"이 있으면
-                     cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
+             (s for s in cody2 if "청" in s) # 하의에 "청"이 있으면
+             cody3 = list(set([s for s in cody2 if "청" in s])) # "청"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "흰" in s) # 상의에 "흰"이 있으면
+             cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
+             (s for s in cody2 if "검" in s) # 하의에 "검"이 있으면
+             cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "회" in s) # 상의에 "회"이 있으면
+             cody4 = list(set([s for s in cody1 if "회" in s])) # "회"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
+             (s for s in cody2 if "검" in s) # 하의에 "검"이 있으면
+             cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "흰" in s) # 상의에 "흰"이 있으면
+             cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
          elif('22.0' < a[13] <= '26.0'):
              cody1 = list(set([s for s in L1 if "나시티" in s] + [s for s in L1 if "민소매" in s] + [s for s in L1 if "반" in s])) #상의 조건결과
              cody2 = list(set([s for s in L2 if "반" in s])) #하의 조건결과
-             if(s for s in cody2 if "청" in s): # 하의에 "청"이 있으면
-                 cody3 = list(set([s for s in cody2 if "청" in s])) # "청"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "흰" in s): # 상의에 "흰"이 있으면
-                     cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
-             if(s for s in cody2 if "검" in s): # 하의에 "검"이 있으면
-                 cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "회" in s): # 상의에 "회"이 있으면
-                     cody4 = list(set([s for s in cody1 if "회" in s])) # "회"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
-             if(s for s in cody2 if "검" in s): # 하의에 "검"이 있으면
-                 cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "흰" in s): # 상의에 "흰"이 있으면
-                     cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
+             (s for s in cody2 if "청" in s) # 하의에 "청"이 있으면
+             cody3 = list(set([s for s in cody2 if "청" in s])) # "청"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "흰" in s) # 상의에 "흰"이 있으면
+             cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
+             (s for s in cody2 if "검" in s) # 하의에 "검"이 있으면
+             cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "회" in s) # 상의에 "회"이 있으면
+             cody4 = list(set([s for s in cody1 if "회" in s])) # "회"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
+             (s for s in cody2 if "검" in s) # 하의에 "검"이 있으면
+             cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "흰" in s) # 상의에 "흰"이 있으면
+             cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
          elif('19.0' < a[13] <= '22.0'):
              cody1 = list(set([s for s in L1 if "나시티" in s] + [s for s in L1 if "민소매" in s] + [s for s in L1 if "반" in s])) #상의 조건결과
              cody2 = list(set([s for s in L2 if "반" in s])) #하의 조건결과
-             if(s for s in cody2 if "청" in s): # 하의에 "청"이 있으면
-                 cody3 = list(set([s for s in cody2 if "청" in s])) # "청"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "흰" in s): # 상의에 "흰"이 있으면
-                     cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
-             if(s for s in cody2 if "검" in s): # 하의에 "검"이 있으면
-                 cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "회" in s): # 상의에 "회"이 있으면
-                     cody4 = list(set([s for s in cody1 if "회" in s])) # "회"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
-             if(s for s in cody2 if "검" in s): # 하의에 "검"이 있으면
-                 cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "흰" in s): # 상의에 "흰"이 있으면
-                     cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
+             (s for s in cody2 if "청" in s) # 하의에 "청"이 있으면
+             cody3 = list(set([s for s in cody2 if "청" in s])) # "청"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "흰" in s) # 상의에 "흰"이 있으면
+             cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
+             (s for s in cody2 if "검" in s) # 하의에 "검"이 있으면
+             cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "회" in s) # 상의에 "회"이 있으면
+             cody4 = list(set([s for s in cody1 if "회" in s])) # "회"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
+             (s for s in cody2 if "검" in s) # 하의에 "검"이 있으면
+             cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "흰" in s) # 상의에 "흰"이 있으면
+             cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
          elif('17.0' < a[13] <= '19.0'):
              cody1 = list(set([s for s in L1 if "나시티" in s] + [s for s in L1 if "민소매" in s] + [s for s in L1 if "반" in s])) #상의 조건결과
              cody2 = list(set([s for s in L2 if "반" in s])) #하의 조건결과
-             if(s for s in cody2 if "청" in s): # 하의에 "청"이 있으면
-                 cody3 = list(set([s for s in cody2 if "청" in s])) # "청"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "흰" in s): # 상의에 "흰"이 있으면
-                     cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
-             if(s for s in cody2 if "검" in s): # 하의에 "검"이 있으면
-                 cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "회" in s): # 상의에 "회"이 있으면
-                     cody4 = list(set([s for s in cody1 if "회" in s])) # "회"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
-             if(s for s in cody2 if "검" in s): # 하의에 "검"이 있으면
-                 cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "흰" in s): # 상의에 "흰"이 있으면
-                     cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
+             (s for s in cody2 if "청" in s) # 하의에 "청"이 있으면
+             cody3 = list(set([s for s in cody2 if "청" in s])) # "청"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "흰" in s) # 상의에 "흰"이 있으면
+             cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
+             (s for s in cody2 if "검" in s) # 하의에 "검"이 있으면
+             cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "회" in s) # 상의에 "회"이 있으면
+             cody4 = list(set([s for s in cody1 if "회" in s])) # "회"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
+             (s for s in cody2 if "검" in s) # 하의에 "검"이 있으면
+             cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "흰" in s) # 상의에 "흰"이 있으면
+             cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
          elif('17.0' >= a[13]):
              cody1 = list(set([s for s in L1 if "나시티" in s] + [s for s in L1 if "민소매" in s] + [s for s in L1 if "반" in s])) #상의 조건결과
              cody2 = list(set([s for s in L2 if "반" in s])) #하의 조건결과
-             if(s for s in cody2 if "청" in s): # 하의에 "청"이 있으면
-                 cody3 = list(set([s for s in cody2 if "청" in s])) # "청"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "흰" in s): # 상의에 "흰"이 있으면
-                     cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
-             if(s for s in cody2 if "검" in s): # 하의에 "검"이 있으면
-                 cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "회" in s): # 상의에 "회"이 있으면
-                     cody4 = list(set([s for s in cody1 if "회" in s])) # "회"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
-             if(s for s in cody2 if "검" in s): # 하의에 "검"이 있으면
-                 cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
-                 if (s for s in cody1 if "흰" in s): # 상의에 "흰"이 있으면
-                     cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
-                     n1 = len(cody3) #하의 길이
-                     n2 = len(cody4) #상의 길이
-                     if(n1 > n2): #하의가 상의보다 같거나 많으면
-                        for i in cody3:
-                            for j in cody4:
-                             print(j + "+" + i)
-                     else:
-                         for i in cody4:
-                             for j in cody3:
-                                 print(i + "+" + j)
+             (s for s in cody2 if "청" in s) # 하의에 "청"이 있으면
+             cody3 = list(set([s for s in cody2 if "청" in s])) # "청"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "흰" in s) # 상의에 "흰"이 있으면
+             cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
+             (s for s in cody2 if "검" in s) # 하의에 "검"이 있으면
+             cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "회" in s) # 상의에 "회"이 있으면
+             cody4 = list(set([s for s in cody1 if "회" in s])) # "회"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
+             (s for s in cody2 if "검" in s) # 하의에 "검"이 있으면
+             cody3 = list(set([s for s in cody2 if "검" in s])) # "검"들어간 옷들 다 넣는다(하의)
+             (s for s in cody1 if "흰" in s) # 상의에 "흰"이 있으면
+             cody4 = list(set([s for s in cody1 if "흰" in s])) # "흰"들어간 옷들 다 넣는다(상의)
+             n1 = len(cody3) #하의 길이
+             n2 = len(cody4) #상의 길이
+             if(n1 > n2): #하의가 상의보다 같거나 많으면
+                for i in cody3:
+                    for j in cody4:
+                        print(j + "+" + i)
+                cody3 = list()
+                cody4 = list()
+             else:
+                for i in cody4:
+                    for j in cody3:
+                        print(i + "+" + j)
+                cody3 = list()
+                cody4 = list()
