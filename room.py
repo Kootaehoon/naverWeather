@@ -19,6 +19,7 @@ class room():
                 print("색갈과 긴/반 을 꼭 입력해주세요")
                 print("------------------------")
                 L1.insert(i, str(input("")))
+                print("추가되었습니다~")
             elif room1 == '2':
                 print("----------------------------------")
                 print("아래 목록에서 삭제할 옷을 고르시오")
@@ -53,6 +54,7 @@ class room():
                 print("색갈과 긴/반 을 꼭 입력해주세요")
                 print("----------------------------")
                 L2.insert(i, str(input()))
+                print("추가되었습니다~")
             elif room1 == '2':
                 print("----------------------------------")
                 print("아래 목록에서 삭제할 옷을 고르시오")
@@ -60,7 +62,7 @@ class room():
                 print("삭제할 옷은?")
                 print("----------------------------------")
                 b = str(input(""))
-                if a in L2:
+                if b in L2:
                     L2.remove(b)
                     print("삭제되었습니다~")
                 else:
