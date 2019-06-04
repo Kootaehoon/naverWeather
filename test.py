@@ -1,7 +1,6 @@
 from naverWeather import *
 from room import *
 from erumyFortune import *
-
 while(1):
  print("\n<<<<<<<<<<<<<<<<<<<<<<<메뉴를 선택하세요.>>>>>>>>>>>>>>>>>>>>>>>")
  print("1번 : 검색 | 2번 : 옷장 | 3번 : 옷장으로 코디해주기 | 4번 : 종료")
@@ -25,6 +24,7 @@ while(1):
     elif area =='': # 공백 입력 시
       print(naverWeather("서울").getWeather())
       erumyFortune.fortune_5()
+      break
 
  elif control == '2': # 2번 입력 시
   while(1):
