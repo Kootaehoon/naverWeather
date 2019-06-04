@@ -2,20 +2,15 @@ import requests
 import datetime
 from bs4 import BeautifulSoup
 from datetime import datetime
-
 APIUrl = 'http://www.erumy.com/free/todayFortuneReport.aspx'
-
 class erumyFortune:
-
     def fortune_1(self): # 입력받은 수로 랜덤수 만들기
         now = datetime.now()
         a = (int(now.second) + int(now.minute) - self - 20000000)
         return a
-
     def fortune_2(self): # 랜덤수 나머지 구하기
         a = self % 10
         return a
-
     def fortune_3(self): # 운세정리
         if(self == 0):
             print("오늘은 누군가로부터 큰 도움을 받을 것 같은 막연한 기대심리가 우러나며, 실제로 약간 부담스러운 도움을 받을 가능성도 많은 편입니다. 연장자나 상사와의 유대관계에서 도움을 받는 일이 생기기 쉬우며, 관공서와 공공기업으로부터 문서상의 권익을 얻을 수 있습니다. 또한 각종 법적인 문서상의 권리(주택, 부동산, 자격증, 특허 등)를 취득하거나, 신문 또는 방송에 나오거나, 표창을 수여하는 등 명예스러운 증서를 받을 수 있는 운입니다. 병무, 경찰, 검찰 등에서 발부하는 문서를 접수하게 되거나 연락해야 할 일이 생기기 쉬운 날입니다.")
@@ -39,7 +34,6 @@ class erumyFortune:
             print("일의 초반이 어려우나 뒤로 갈수록 전개가 빨라지고 해결이 쉽습니다. 한결같은 태도를 유지하세요. 일관되게 노력하면 많은 것을 해냅니다. 자신이 세운 목표를 중심으로 자신의 뜻을 이루도록 노력해보세요. 자신의 노력만큼 값진 행동은 없습니다. 또한 가족의 인정과 격려를 얻게 됩니다. 자신의 목표에 부합되는 만큼 멋진 성과를 기대하는 것도 나쁘지 않습니다. 초반에는 스트레스를 받을 수 있으나 점차 운세의 흐름이 당신에게 행운으로 돌아가고 있으니 자신감을 가지세요.")
         else:
             print("오늘은 누군가로부터 큰 도움을 받을 것 같은 막연한 기대심리가 우러나며, 실제로 약간 부담스러운 도움을 받을 가능성도 많은 편입니다. 연장자나 상사와의 유대관계에서 도움을 받는 일이 생기기 쉬우며, 관공서와 공공기업으로부터 문서상의 권익을 얻을 수 있습니다. 또한 각종 법적인 문서상의 권리(주택, 부동산, 자격증, 특허 등)를 취득하거나, 신문 또는 방송에 나오거나, 표창을 수여하는 등 명예스러운 증서를 받을 수 있는 운입니다. 병무, 경찰, 검찰 등에서 발부하는 문서를 접수하게 되거나 연락해야 할 일이 생기기 쉬운 날입니다.")
-
     def fortune_4(self): # submain함수
         a = self
         b = erumyFortune.fortune_1(a)
@@ -50,10 +44,13 @@ class erumyFortune:
             print("1번 : 오늘운세 확인 | 2번 : 종료")
             check = input()
             if check == '1':
+            check = int(input())
+            if check == 1:
                 print("생년월일을 띄어쓰기 하지 마시고 적어주세요")
                 date = int(input())
                 erumyFortune.fortune_4(date)
             elif check =='2':
+            elif check == 2:
                 break
             else:
                 print("잘못입력하셨습니다. 다시입력해주세요\n")
